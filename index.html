@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title >MY PORTFOLIO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:#0b0b0b;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav h1{color:#f5c518;}
+
+nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+nav ul li a:hover{color:#f5c518;}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 80px;
+}
+
+.hero-text h2{color:#f5c518;font-weight:300;}
+
+.hero-text h1{
+  font-size:70px;
+  font-weight:800;
+}
+
+.hero-text p{
+  color:#aaa;
+  margin:20px 0;
+}
+
+.btn{
+  padding:12px 25px;
+  border:1px solid #f5c518;
+  color:#f5c518;
+  text-decoration:none;
+  margin-right:10px;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#f5c518;
+  color:black;
+}
+
+.hero img{
+  width:380px;
+  border-radius:10px;
+  box-shadow:0 0 60px rgba(255,215,0,0.4);
+}
+
+/* ABOUT */
+section{padding:100px 80px;}
+
+.about{
+  display:flex;
+  gap:50px;
+  align-items:center;
+}
+
+.about img{
+  width:280px;
+  border-radius:10px;
+}
+
+.skills p{margin-top:10px;}
+
+.bar{
+  background:#222;
+  height:8px;
+  border-radius:5px;
+}
+
+.fill{
+  background:#f5c518;
+  height:100%;
+}
+
+/* PORTFOLIO */
+.portfolio{text-align:center;}
+
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  margin-top:40px;
+}
+
+.gallery img{
+  width:260px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* SERVICES */
+.services{
+  text-align:center;
+}
+
+.service-box{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.card{
+  border:1px solid #222;
+  padding:30px;
+  width:220px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  border-color:#f5c518;
+}
+
+/* CONTACT */
+.contact{text-align:center;}
+
+.socials{
+  margin-top:20px;
+}
+
+.socials a{
+  margin:10px;
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>MY PORTFOLIO</h1>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h2>Hi, I'm</h2>
+    <h1>JOY THAS</h1>
+    <p>Photographer • Editor • Designer</p>
+    <a href="#work" class="btn">View Work</a>
+    <a href="https://wa.me/94771945590?text=Hi JOYTHAS" class="btn">WhatsApp Me</a>
+  </div>
+
+  <img src="photo1.jpg">
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <img src="photo5.jpg" alt="">
+  <div>
+    <h2>About Me</h2>
+    <p>I create cinematic photos and creative visual designs.</p>
+
+    <div class="skills">
+      <p>Photography</p>
+      <div class="bar"><div class="fill" style="width:90%"></div></div>
+
+      <p>Editing</p>
+      <div class="bar"><div class="fill" style="width:85%"></div></div>
+
+      <p>Design</p>
+      <div class="bar"><div class="fill" style="width:75%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="work" class="portfolio">
+  <h2>My Work</h2>
+  <div class="gallery">
+    <img src="photo3.jpg">
+    <img src="photo2.jpg">
+    <img src="photo6.jpg">
+    <img src="photo4.jpg">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Services</h2>
+
+  <div class="service-box">
+    <div class="card">Photography</div>
+    <div class="card">Video Editing</div>
+    <div class="card">Graphic Design</div>
+    <div class="card">Drone Shoot</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <P>FOROM: Akkirasappillaiyar front Road, Thirukkovil-1</P>
+  <p>Email: joythas13@gmail.com</p>
+  <p>Phone: +94771945590</p>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/kishan_tk5?igsh=MTlubXkxejVld3pybQ==">Instagram</a>
+    <a href="https://wa.me/94771945590?text=Hi JOYTHAS">WhatsApp</a>
+  </div>
+  
+</section>
+
+<footer>
+ © 2026 joythas, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+</footer>
+
+</body>
+</html>
